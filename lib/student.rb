@@ -11,6 +11,7 @@ class Student
     @grade = grade
     @id = id
   end
+
   def self.new_from_db(row)
       # create a new Student object given a row from the database
       s = self.new  # self.new is the same as running Song.new
@@ -19,6 +20,7 @@ class Student
       s.grade = row[2]
       s  # return the newly created instance
     end
+
   def self.create_table
     sql =  <<-SQL
       CREATE TABLE IF NOT EXISTS students (
