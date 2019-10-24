@@ -18,7 +18,7 @@ class Student
       student.id = row[0]
       student.name =  row[1]
       student.grade = row[2]
-      s  # return the newly created instance
+      student  # return the newly created instance
     end
 
   def self.create_table
